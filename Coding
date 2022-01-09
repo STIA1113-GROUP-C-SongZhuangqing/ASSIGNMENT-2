@@ -1,0 +1,1048 @@
+package car2;
+
+import java.util.Scanner;
+
+public class changedIFELSE {
+	public static void main(String[] args) {
+		int number;
+		int type;
+		int level;
+		int price;
+		int phone;
+		int pick;
+	Scanner scan=new Scanner(System.in);
+	//1.
+	System.out.println("Welcome to Car Online Sales Platform");
+	System.out.println("Please enter your name:");
+	String name=scan.nextLine();
+	System.out.println("Please enter your phone number:");
+	phone=scan.nextInt();
+	System.out.println("What kind of vehicle do you want to browse?(Please enter the number of the type.)");
+	System.out.println("1.Car");
+	System.out.println("2.MPV");
+	System.out.println("3.SUV");
+	System.out.println("4.Sports Car"); 
+	System.out.println("5.Truck");
+	number=scan.nextInt();
+	if(number<1^number>5) {
+		System.out.println("Error,Please enter again:");
+	}else
+if(number==5) {
+
+			System.out.println("Here are the following types of Truck to choose from");
+			System.out.println("1.FAW Heavy truck");
+			System.out.println("2.IVECO");
+			System.out.println("3.SGMW");
+			System.out.println("Please select the truck you want to know");
+			type=scan.nextInt();
+			switch(type) {
+			case 3:
+				System.out.println("SGMW:");
+				System.out.println("1.Low-level version:27,000RM");
+				System.out.println("2.Premium version:40,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=27000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+							switch(pick) {
+							case 2:
+								System.out.println("The way you pick up the car is delivered by staff");
+								break;
+							case 1:
+								System.out.println("The way you pick up the car is pick up by yourself");
+								break;
+							}
+							System.out.println("The car you bought is:SGMW--Low-level version");
+					break;
+				case 2:
+					price=40000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:SGMW--Premium version");
+					break;
+				}
+				break;
+			case 2:
+				System.out.println("IVECO:");
+				System.out.println("1.Low-level version:73,000RM");
+				System.out.println("2.Premium version:106,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=73000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:IVECO--Low-level version");
+					break;
+				case 2:
+					price=106000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:IVECO--Premium version");
+					break;
+				}
+				break;
+			case 1:
+				System.out.println("FAW Heavy truck:");
+				System.out.println("1.Low-level version:180,000RM");
+				System.out.println("2.Premium version:306,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=180000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:FAW Heavy truck--Low-level version");
+					break;
+				case 2:
+					price=306000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:FAW Heavy truck--Premium version");
+					break;
+				}
+				break;
+			}
+}
+else if(number==4) {
+			System.out.println("Here are the following types of Sports Car to choose from");
+			System.out.println("1.Ferrari F8");
+			System.out.println("2.Aston Martin V8 Vantage");
+			System.out.println("3.Porsche 718");
+			System.out.println("Please select the truck you want to know");
+			type=scan.nextInt();
+			switch(type) {
+			case 3:
+				System.out.println("Porsche 718:");
+				System.out.println("1.Low-level version:365,000RM");
+				System.out.println("2.Premium version:1,050,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=365000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Porsche 718--Low-level version");
+					break;
+				case 2:
+					price=1050000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Porsche 718--Premium version");
+					break;
+				}
+				break;
+			case 2:
+				System.out.println("Aston Martin V8 Vantage:");
+				System.out.println("1.Low-level version:1,130,000RM");
+				System.out.println("2.Premium version:1,389,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=1130000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Aston Martin V8 Vantage--Low-level version");
+					break;
+				case 2:
+					price=1389000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Aston Martin V8 Vantage--Premium version");
+					break;
+				}
+				break;
+			case 1:
+				System.out.println("Ferrari F8:");
+				System.out.println("1.Low-level version:1,994,000RM");
+				System.out.println("2.Premium version:2,266,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=1994000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Ferrari F8--Low-level version");
+					break;
+				case 2:
+					price=2266000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Ferrari F8--Premium version");
+					break;
+				}
+				break;
+			}
+}
+else if(number==3) {
+
+			System.out.println("Here are the following types of SUV to choose from");
+			System.out.println("1.Audi Q5L");
+			System.out.println("2.HONDA-CR-V");
+			System.out.println("3.Haval H6");
+			System.out.println("Please select the truck you want to know");
+			type=scan.nextInt();
+			switch(type) {
+			case 3:
+				System.out.println("Haval H6:");
+				System.out.println("1.Low-level version:66,000RM");
+				System.out.println("2.Premium version:100,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=66000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");						
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Haval H6--Low-level version");
+					break;
+				case 2:
+					price=100000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Haval H6--Premium version");
+					break;
+				}
+				break;
+			case 2:
+				System.out.println("HONDA-CR-V:");
+				System.out.println("1.Low-level version:113,000RM");
+				System.out.println("2.Premium version:186,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=113000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:HONDA-CR-V--Low-level version");
+					break;
+				case 2:
+					price=186000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:HONDA-CR-V--Premium version");
+					break;
+				}
+				break;
+			case 1:
+				System.out.println("Audi Q5L:");
+				System.out.println("1.Low-level version:266,000RM");
+				System.out.println("2.Premium version:319,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=266000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Audi Q5L--Low-level version");
+					break;
+				case 2:
+					price=319000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Audi Q5L--Premium version");
+					break;
+				}
+				break;
+			}
+}
+else if(number==2) {
+
+			System.out.println("Here are the following types of MPV to choose from");
+			System.out.println("1.Odyssey");
+			System.out.println("2.Trumpchi M8");
+			System.out.println("3.SGMW-Victory");
+			System.out.println("Please select the MPV you want to know");
+			type=scan.nextInt();
+			switch(type) {
+			case 3:
+				System.out.println("SGMW-Victory:");
+				System.out.println("1.Low-level version:60,000RM");
+				System.out.println("2.Premium version:93,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=60000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:SGMW-Victory--Low-level version");
+					break;
+				case 2:
+					price=93000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:SGMW-Victory--Premium version");
+					break;
+				}
+				break;
+			case 2:
+				System.out.println("Trumpchi M8:");
+				System.out.println("1.Low-level version:120,000RM");
+				System.out.println("2.Premium version:246,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=120000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Trumpchi M8--Low-level version");
+					break;
+				case 2:
+					price=246000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Trumpchi M8--Premium version");
+					break;
+				}
+				break;
+			case 1:
+				System.out.println("Odyssey:");
+				System.out.println("1.Low-level version:146,000RM");
+				System.out.println("2.Premium version:233,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=146000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Odyssey--Low-level version");
+					break;
+				case 2:
+					price=233000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Odyssey--Premium version");
+					break;
+				}
+				break;
+			}
+}
+			else if(number==1) {
+
+			System.out.println("Here are the following types of Car to choose from");
+			System.out.println("1.Audi A6");
+			System.out.println("2.COROLLA");
+			System.out.println("3.LAVIDA");
+			System.out.println("Please select the Car you want to know");
+			type=scan.nextInt();
+			switch(type) {
+			case 3:
+				System.out.println("LAVIDA:");
+				System.out.println("1.Low-level version:73,000RM");
+				System.out.println("2.Premium version:99,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=73000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:LAVIDA--Low-level version");
+					break;
+				case 2:
+					price=99000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:LAVIDA--Premium version");
+					break;
+				}
+				break;
+			case 2:
+				System.out.println("COROLLA:");
+				System.out.println("1.Low-level version:73,000RM");
+				System.out.println("2.Premium version:93,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=73000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:COROLLA--Low-level version");
+					break;
+				case 2:
+					price=93000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:COROLLA--Premium version");
+					break;
+				}
+				break;
+			case 1:
+				System.out.println("Audi A6:");
+				System.out.println("1.Low-level version:280,000RM");
+				System.out.println("2.Premium version:430,000RM");
+				level=scan.nextInt();
+				switch(level) {
+				case 1:
+					price=280000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Audi A6--Low-level version");
+					break;
+				case 2:
+					price=4304000;
+					System.out.println("Final price is:"+price);
+					if(price<100000) {
+						System.out.println("The gifts are:Car cleaning kit");
+					}else if(100000<=price&&price<300000) {
+						System.out.println("The gifts are:Car cleaning kit + A gas card worth 1,000");
+					}else if(300000<=price&&price<500000) {
+						System.out.println("The gifts are:Free maintenance once a year for five years + Free car wash 10 times a year + A gas card worth 1,000");
+					}else if(500000<=price&&price<1000000) {
+						System.out.println("The gifts are:Two free inspections per year for seven years + 15 free car washes per year + One set of leather seats");
+					}else if(1000000<=price&&price<2000000) {
+						System.out.println("The gifts are:All service items are free for life");
+					}
+					System.out.println("Please choose the way and enter the number you want to pick up the car:");
+					System.out.println("1.Delivered by staff");
+					System.out.println("2.Pick up the car by yourself");
+					pick=scan.nextInt();
+					switch(pick) {
+					case 2:
+						System.out.println("The way you pick up the car is delivered by staff");
+						break;
+					case 1:
+						System.out.println("The way you pick up the car is pick up by yourself");
+						break;
+					}
+					System.out.println("The car you bought is:Audi A6--Premium version");
+					break;
+				}
+				break;
+			}
+			
+		}System.out.println("Thank you for your consumption, we will communicate with you on the phone at any time if there is any situation. ");
+		System.out.println("Your name is:"+name);
+		System.out.println("Your phone number is:"+phone);
+	}
+}
