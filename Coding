@@ -12,12 +12,20 @@ public class changedIFELSE {
 		int pick;
 	Scanner scan=new Scanner(System.in);
 	//1.
-	System.out.println("Welcome to Car Online Sales Platform");
 	System.out.println("Please enter your name:");
 	String name=scan.nextLine();
 	System.out.println("Please enter your phone number:");
 	phone=scan.nextInt();
-	System.out.println("What kind of vehicle do you want to browse?(Please enter the number of the type.)");
+	for(int i=0;i<2;i++) {
+		switch(i) {
+		case 0:
+			System.out.println("Welcome to Car Online Sales Platform");		
+			break;
+		case 1:
+			System.out.println("What kind of vehicle do you want to browse?(Please enter the number of the type.)");
+			break;
+		}
+	}
 	System.out.println("1.Car");
 	System.out.println("2.MPV");
 	System.out.println("3.SUV");
@@ -838,7 +846,7 @@ else if(number==2) {
 				break;
 			}
 }
-			else if(number==1) {
+else if(number==1) {
 
 			System.out.println("Here are the following types of Car to choose from");
 			System.out.println("1.Audi A6");
